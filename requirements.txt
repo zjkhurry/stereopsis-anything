@@ -1,0 +1,6 @@
+pytorch
+numpy
+glfw
+pyopengl
+coremltools
+pyobjc
