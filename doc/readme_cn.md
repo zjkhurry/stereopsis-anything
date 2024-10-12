@@ -1,5 +1,7 @@
 # Stereo Anything
+
 [EN](../readme.md) | [中文](readme_cn.md)
+
 **Stereo Anything** 可以实时将屏幕上的 2D 内容转换成立体图像（空间视频），理论上兼容多种 AR/VR 眼镜，如雷鸟 Air 1s/2s、X1、X2、Nreal Air 等。该项目专为 macOS 进行了优化，windows用户需要自行修改代码。
 
 ## 特点
