@@ -3,8 +3,8 @@
 [EN](../readme.md) | [中文](readme_cn.md)
 
 **Stereo Anything** 可以实时将屏幕上的 2D 内容转换成立体图像（空间视频），理论上兼容多种 AR/VR 眼镜，如雷鸟 Air 1s/2s、X1、X2、Nreal Air 等。该项目专为 macOS 进行了优化，windows用户需要自行修改代码。
-![stereo image](img/1.jpeg)
-![stereo image](img/2.gif)
+![stereo image](../img/1.jpeg)
+![stereo image](../img/2.gif)
 
 ## 特点
 - 实时将屏幕上的 2D 内容转换成立体图像。
@@ -14,6 +14,7 @@
 - 使用 OpenGL 在 GPU 上直接渲染图形。
 - 在 M3 Max 上可以达到 33 FPS，延迟约为 100ms，适合流畅播放视频。
 - 在 M2 上可以达到大约 10 FPS，略有卡顿，但又不是不能用 :satisfied:。
+![delay](../img/delay.jpeg)
 
 ## 技术栈
 - **Python**：用于开发和构建应用程序。
