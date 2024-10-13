@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1> Stereo Anything </h1>
+<h1> Stereopsis Anything </h1>
 
 [EN](readme.md) | [中文](doc/readme_cn.md)
 
@@ -8,7 +8,7 @@
 <img src="img/icon.png" alt="ico" style="width: 200px; height: auto;">
 </div>
 
-**Stereo Anything** can convert 2D content on the screen in real-time into stereoscopic images (spatial videos) that are theoretically compatible with various AR/VR glasses, such as Rayneo Air 1s/2s, X1, X2, Nreal Air, etc. The project is specifically optimized for macOS and is designed to work best on Mac systems.
+**Stereopsis Anything** can convert 2D content on the screen in real-time into stereoscopic images (spatial videos) that are theoretically compatible with various AR/VR glasses, such as Rayneo Air 1s/2s, X1, X2, Nreal Air, etc. The project is specifically optimized for macOS and is designed to work best on Mac systems.
 ![stereo image](img/1.jpeg)
 ![stereo image](img/2.gif)
 
@@ -36,8 +36,8 @@
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/zjkhurry/stereo-anything.git
-   cd stereo-anything
+   git clone https://github.com/zjkhurry/stereopsis-anything.git
+   cd stereopsis-anything
    ```
 
 2. Install dependencies:
