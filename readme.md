@@ -20,11 +20,11 @@
 ## Technology Stack
 
 - **Python**: For development and application building.
-- **Pyobjc**: To interact with macOS system-level functionalities.
-- **CoreML**: For deep learning model inference.
-- **OpenGL**: For efficient graphics rendering.
-- **Screen Capture Kit**: For capturing screen content.
-- **Pytorch**: For high performance MPS acceleration.
+- **[Pyobjc](https://github.com/ronaldoussoren/pyobjc/tree/master)**: To interact with macOS system-level functionalities.
+- **[coremltools](https://github.com/apple/coremltools/tree/main)**: For deep learning model inference.
+- **[OpenGL](https://pyopengl.sourceforge.net/)**: For efficient graphics rendering.
+- **[ScreenCaptureKit](https://developer.apple.com/documentation/screencapturekit?language=objc)**: For capturing screen content.
+- **[Pytorch](https://pytorch.org/)**: For high performance MPS acceleration.
 
 ## Installation Guide
 

@@ -18,11 +18,11 @@
 
 ## 技术栈
 - **Python**：用于开发和构建应用程序。
-- **Pyobjc**：与 macOS 系统级功能交互。
-- **CoreML**：用于深度学习模型推理。
-- **OpenGL**：高效图形渲染。
-- **Screen Capture Kit**：捕获屏幕内容。
-- **Pytorch**：高性能 MPS 加速。
+- **[Pyobjc](https://github.com/ronaldoussoren/pyobjc/tree/master)**：与 macOS 系统级功能交互。
+- **[CoreML](https://github.com/apple/coremltools/tree/main)**：用于深度学习模型推理。
+- **[OpenGL](https://pyopengl.sourceforge.net/)**：高效图形渲染。
+- **[Screen CaptureKit](https://developer.apple.com/documentation/screencapturekit?language=objc)**：捕获屏幕内容。
+- **[Pytorch](https://pytorch.ac.cn/)**：高性能 MPS 加速。
   
 ## 安装指南
 1. 克隆仓库到本地：
