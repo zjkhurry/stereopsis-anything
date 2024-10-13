@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1> Stereo Anything </h1>
+<h1> Stereopsis Anything </h1>
 
 [EN](../readme.md) | [中文](readme_cn.md)
 
@@ -8,7 +8,7 @@
 
 </div>
 
-**Stereo Anything** 可以实时将屏幕上的 2D 内容转换成立体图像（空间视频），理论上兼容多种 AR/VR 眼镜，如雷鸟 Air 1s/2s、X1、X2、Nreal Air 等。该项目专为 macOS 进行了优化，windows用户需要自行修改代码。
+**Stereopsis Anything** 可以实时将屏幕上的 2D 内容转换成立体图像（空间视频），理论上兼容多种 AR/VR 眼镜，如雷鸟 Air 1s/2s、X1、X2、Nreal Air 等。该项目专为 macOS 进行了优化，windows用户需要自行修改代码。
 ![stereo image](../img/1.jpeg)
 ![stereo image](../img/2.gif)
 
@@ -33,8 +33,8 @@
 ## 安装指南
 1. 克隆仓库到本地：
 ```bash
-git clone https://github.com/zjkhurry/stereo-anything.git
-cd stereo-anything
+git clone https://github.com/zjkhurry/stereopsis-anything.git
+cd stereopsis-anything
 ```
 2. 安装依赖：
 ```bash
