@@ -1,6 +1,12 @@
+<center>
+
 # Stereo Anything
 
 [EN](readme.md) | [中文](doc/readme_cn.md)
+
+
+<img src="img/icon.png" alt="ico" style="width: 200px; height: auto;">
+</center>
 
 **Stereo Anything** can convert 2D content on the screen in real-time into stereoscopic images (spatial videos) that are theoretically compatible with various AR/VR glasses, such as Rayneo Air 1s/2s, X1, X2, Nreal Air, etc. The project is specifically optimized for macOS and is designed to work best on Mac systems.
 ![stereo image](img/1.jpeg)
