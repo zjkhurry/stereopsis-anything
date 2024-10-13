@@ -90,7 +90,13 @@ parser.add_argument(
     "-c",
     type=str,
     default="GPU",
-    help="Compute unit for CoreML model.(ALL | GPU | CPU | NE)",
+    choices=[
+        "ALL",
+        "GPU",
+        "CPU",
+        "NE",
+    ],
+    help="Compute unit for CoreML model.",
 )
 args = parser.parse_args()
 
