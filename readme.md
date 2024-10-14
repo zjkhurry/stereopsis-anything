@@ -20,7 +20,7 @@
 - A specially optimized CoreML [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2) model that supports tensor input/output.
 - Renders graphics directly on the GPU using OpenGL.
 - Achieves 33 FPS with approximately 100ms latency on M3 Max, suitable for smooth video playback.
-- Achieves around 10 FPS on M2, slightly laggy but still usable :satisfied:.
+- Achieves around 15 FPS on M2, slightly laggy but still usable :satisfied:.
 ![delay](img/delay.jpeg)
 
 ## Technology Stack

@@ -19,7 +19,7 @@
 - 特别优化的 CoreML Depth Anything V2 模型，支持 Tensor 输入/输出。
 - 使用 OpenGL 在 GPU 上直接渲染图形。
 - 在 M3 Max 上可以达到 33 FPS，延迟约为 100ms，适合流畅播放视频。
-- 在 M2 上可以达到大约 10 FPS，略有卡顿，但又不是不能用 :satisfied:。
+- 在 M2 上可以达到大约 15 FPS，略有卡顿，但又不是不能用 :satisfied:。
 ![delay](../img/delay.jpeg)
 
 ## 技术栈
