@@ -1,8 +1,11 @@
 torch 
 torchvision 
-torchaudio
 numpy
 glfw
 pyopengl
 coremltools
 pyobjc
+gradio_imageslider
+gradio==4.29.0
+matplotlib
+opencv-python

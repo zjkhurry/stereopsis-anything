@@ -8,7 +8,7 @@
 <img src="img/icon.png" alt="ico" style="width: 200px; height: auto;">
 </div>
 
-**Stereopsis Anything** can convert 2D content on the screen in real-time into stereoscopic images (spatial videos) that are theoretically compatible with various AR/VR glasses, such as Rayneo Air 1s/2s, X1, X2, Nreal Air, etc. The project is specifically optimized for macOS and is designed to work best on Mac systems.
+**Stereopsis Anything** can convert 2D content on the screen in real-time into stereoscopic images (spatial videos) that are theoretically compatible with various AR/VR glasses, such as Rayneo Air 1s/2s, X1, X2, Nreal Air, etc. The project is specifically optimized for macOS and is designed to work best on Mac systems. But it can still work with windows and linux I think.
 ![stereo image](img/1.jpeg)
 ![stereo image](img/2.gif)
 
@@ -31,6 +31,7 @@
 - **[OpenGL](https://pyopengl.sourceforge.net/)**: For efficient graphics rendering.
 - **[ScreenCaptureKit](https://developer.apple.com/documentation/screencapturekit?language=objc)**: For capturing screen content.
 - **[Pytorch](https://pytorch.org/)**: For high performance MPS acceleration.
+- **[mss](https://python-mss.readthedocs.io/index.html)**：Capture screen for windows and linux.
 
 ## Installation Guide
 
@@ -47,6 +48,7 @@
 
 ## Usage Guide
 
+### MacOS
 Run the main program:
 ```bash
 python3 run.py
@@ -67,6 +69,13 @@ You can combine them as
 ```bash
 python3 run.py -f 15 -c "NE"
 ```
+
+### Windows/Linux
+Run the main program:
+```bash
+python3 run_all.py
+```
+The program will capture the main display and create a window displaying the stereoscopic video (3840 x 1080). Set your AR glasses to 3D mode, extend the screen, and then drag the stereoscopic video window to the extended screen for full-screen display. Press 'q' to exit the application and use ',' and '.' to modify the depth of the stereoscopic image.
 
 ## Notes
 

@@ -8,7 +8,7 @@
 
 </div>
 
-**Stereopsis Anything** 可以实时将屏幕上的 2D 内容转换成立体图像（空间视频），理论上兼容多种 AR/VR 眼镜，如雷鸟 Air 1s/2s、X1、X2、Nreal Air 等。该项目专为 macOS 进行了优化，windows用户需要自行修改代码。
+**Stereopsis Anything** 可以实时将屏幕上的 2D 内容转换成立体图像（空间视频），理论上兼容多种 AR/VR 眼镜，如雷鸟 Air 1s/2s、X1、X2、Nreal Air 等。该项目专为 macOS 进行了优化，windows/linux系统可能运行效率较低。
 ![stereo image](../img/1.jpeg)
 ![stereo image](../img/2.gif)
 
@@ -29,6 +29,7 @@
 - **[OpenGL](https://pyopengl.sourceforge.net/)**：高效图形渲染。
 - **[Screen CaptureKit](https://developer.apple.com/documentation/screencapturekit?language=objc)**：捕获屏幕内容。
 - **[Pytorch](https://pytorch.ac.cn/)**：高性能 MPS 加速。
+- **[mss](https://python-mss.readthedocs.io/index.html)**：屏幕截图。
   
 ## 安装指南
 1. 克隆仓库到本地：
@@ -42,6 +43,8 @@ pip3 install -r requirements.txt
 ```
 
 ## 使用指南
+
+### MacOS
 运行主程序：
 ```bash
 python3 run.py
@@ -59,6 +62,12 @@ python3 run.py -f 15
 ```bash
 python3 run.py -f 15 -c "NE"
 ```
+### Windows/Linux
+运行主程序：
+```bash
+python3 run_all.py
+```
+程序将会录制主显示器（windows上可能不会录制鼠标，需要等mss更新），并创建一个窗口，显示立体视频（3840 x 1080）。将 AR 眼镜设置为 3D 模式，扩展屏幕，然后将立体视频窗口拖到扩展屏幕上进行全屏显示。按 'q' 键退出应用程序，使用 ',' 和 '.' 修改立体图像的深度。
 
 ## Tips
 - 确保 macOS 版本大于 macOS 13.0，并且 Mac 设备支持 OpenGL 2.1。
