@@ -1,4 +1,6 @@
-pytorch
+torch 
+torchvision 
+torchaudio
 numpy
 glfw
 pyopengl
