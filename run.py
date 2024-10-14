@@ -98,6 +98,13 @@ parser.add_argument(
     ],
     help="Compute unit for CoreML model.",
 )
+parser.add_argument(
+    "--fps",
+    "-f",
+    type=int,
+    default="30",
+    help="The speed to capture your screen.",
+)
 args = parser.parse_args()
 
 DEVICE = "mps" if torch.backends.mps.is_available() else "cpu"
@@ -109,8 +116,8 @@ model_path = os.path.join(base_dir, args.model_path)
 
 target_width = args.stereo_width
 target_height = args.stereo_height
-model_input_width = 672
-model_input_height = 378
+model_input_width = 518
+model_input_height = 392
 
 # 创建网格
 grid_y, grid_x = torch.meshgrid(
@@ -236,7 +243,7 @@ def record(output_queue):
         config.setSourceRect_(area)
         config.scalesToFit()
         config.preservesAspectRatio()
-        interval = CoreMedia.CMTimeMake(1, 30)
+        interval = CoreMedia.CMTimeMake(1, args.fps)
         config.setMinimumFrameInterval_(interval)
         config.setQueueDepth_(10)
         config.setPixelFormat_(1111970369)
