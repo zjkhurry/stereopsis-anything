@@ -53,9 +53,15 @@ python3 run.py
 ```
 The program will crop the central 16:9 aspect ratio region of the main display (since MacBook screens are not 16:9, this crops the display area for a full-screen 1080p video) and create a window displaying the stereoscopic video (3840 x 1080). Set your AR glasses to 3D mode, extend the screen, and then drag the stereoscopic video window to the extended screen for full-screen display. Press 'q' to exit the application and use ',' and '.' to modify the depth of the stereoscopic image.
 
+You can also try to use Nerual Engine (NE) to run the AI model, this may improve the performance on M1, M2 chips
+```bash
+python3 run.py -c "NE"
+```
+
 ## Notes
 
 - Ensure your macOS version is greater than macOS 13.0 and that your Mac device supports OpenGL 2.1.
+- This code has been tested with Python 3.11, but there might be some issues if you use a different version of Python.
 - Due to high performance requirements, it is recommended to use supported hardware devices (such as M3 Max or M2 Max chips) for the best experience.
 - Testing has shown that running the model on the GPU is significantly faster than using the Neural Engine (NE) on M3 Max, but on M2, using NE is faster than using the GPU. Feel free to try both.
 - If you need personalized settings, such as modifying the screen capture area, changing the CoreML execution device (GPU, NE), or adjusting the output frame size, use the following command:
