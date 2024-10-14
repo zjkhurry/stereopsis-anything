@@ -51,6 +51,14 @@ python3 run.py
 ```bash
 python3 run.py -c "NE"
 ```
+CPU的性能可能严重影响运行速度，可以尝试调低录屏的帧率来降低CPU的使用率，这里展示将速率将到15fps
+```bash
+python3 run.py -f 15
+```
+这些命令可以进行组合，例如：
+```bash
+python3 run.py -f 15 -c "NE"
+```
 
 ## Tips
 - 确保 macOS 版本大于 macOS 13.0，并且 Mac 设备支持 OpenGL 2.1。

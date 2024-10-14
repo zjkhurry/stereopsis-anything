@@ -58,6 +58,16 @@ You can also try to use Nerual Engine (NE) to run the AI model, this may improve
 python3 run.py -c "NE"
 ```
 
+And a slower screen capture speed may also help，i.e. set speed to 15 fps
+```bash
+python3 run.py -f 15
+```
+
+You can combine them as 
+```bash
+python3 run.py -f 15 -c "NE"
+```
+
 ## Notes
 
 - Ensure your macOS version is greater than macOS 13.0 and that your Mac device supports OpenGL 2.1.
