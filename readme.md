@@ -42,8 +42,13 @@
    ```
 
 2. Install dependencies:
+   For MacOS:
    ```bash
    pip3 install -r requirements.txt
+   ```
+   For Winsows/Linux
+    ```bash
+   pip3 install -r requirements_all.txt
    ```
 
 ## Usage Guide

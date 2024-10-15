@@ -33,14 +33,19 @@
   
 ## 安装指南
 1. 克隆仓库到本地：
-```bash
-git clone https://github.com/zjkhurry/stereopsis-anything.git
-cd stereopsis-anything
-```
+    ```bash
+    git clone https://github.com/zjkhurry/stereopsis-anything.git
+    cd stereopsis-anything
+    ```
 2. 安装依赖：
-```bash
-pip3 install -r requirements.txt
-```
+    MacOs
+    ```bash
+    pip3 install -r requirements.txt
+    ```
+    Windows/Linux
+    ```bash
+    pip3 install -r requirements_all.txt
+    ```
 
 ## 使用指南
 
