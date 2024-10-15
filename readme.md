@@ -50,6 +50,7 @@
     ```bash
    pip3 install -r requirements_all.txt
    ```
+   And make sure you have installed the [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) and [cuDNN](https://developer.nvidia.com/cudnn) correctly.
 
 ## Usage Guide
 

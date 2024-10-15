@@ -38,14 +38,15 @@
     cd stereopsis-anything
     ```
 2. 安装依赖：
-    MacOs
+    ### MacOs
     ```bash
     pip3 install -r requirements.txt
     ```
-    Windows/Linux
+    ### Windows/Linux
     ```bash
     pip3 install -r requirements_all.txt
     ```
+    并且确保正确安装了 [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) 和 [cuDNN](https://developer.nvidia.com/cudnn).
 
 ## 使用指南
 

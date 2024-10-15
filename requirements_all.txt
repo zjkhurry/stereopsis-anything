@@ -6,4 +6,4 @@ gradio==4.29.0
 matplotlib
 opencv-python
 mss
-pytorch-cuda=12.4
+pytorch-cuda
