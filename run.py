@@ -44,7 +44,7 @@ parser.add_argument(
     "--model_path",
     "-m",
     type=str,
-    default="depth_anything_v2_vits2.mlpackage",
+    default="model/depth_anything_v2_vits2.mlpackage",
     help="Path to the CoreML model.",
 )
 parser.add_argument(
@@ -111,8 +111,7 @@ DEVICE = "mps" if torch.backends.mps.is_available() else "cpu"
 
 SCStreamOutput = objc.protocolNamed("SCStreamOutput")
 
-base_dir = os.path.dirname(__file__) + "/model/"
-model_path = os.path.join(base_dir, args.model_path)
+model_path = args.model_path
 
 target_width = args.stereo_width
 target_height = args.stereo_height
