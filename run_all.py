@@ -88,6 +88,7 @@ DEVICE = (
 scale = args.scale
 change = 1e-3
 
+
 def generate_stereo_images_gpu(raw_image, depth_map):
     global scale
     raw_image = raw_image[:, :, :3]
@@ -247,7 +248,7 @@ class StereoImageViewer:  # QWidget
         self.update_from_queue()
 
     def update_from_queue(self):
-        global 
+        global scale
         while True:
             key = cv2.waitKey(1)
             if key == ord("q"):  # 按下q键退出
