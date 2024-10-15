@@ -249,6 +249,10 @@ class StereoImageViewer:  # QWidget
 
     def update_from_queue(self):
         global scale
+        cv2.namedWindow("Window_name", cv2.WINDOW_NORMAL)
+        cv2.setWindowProperty(
+            "Window_name", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN
+        )
         while True:
             key = cv2.waitKey(1)
             if key == ord("q"):  # 按下q键退出
