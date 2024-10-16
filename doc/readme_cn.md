@@ -87,4 +87,4 @@ python3 run.py -h
 
 ---
 
-<small> 注意：本项目使用 Apache License 2.0 许可证发布。商业用途需要事先获得作者的书面许可。请通过 zjkharry@gmail.com 联系作者获取更多信息。</small>
+> 注意：本项目使用 Apache License 2.0 许可证发布。商业用途需要事先获得作者的书面许可。请通过 zjkharry@gmail.com 联系作者获取更多信息。
