@@ -93,3 +93,12 @@ The program will capture the main display and create a window displaying the ste
 ```bash
 python3 run.py -h
 ```
+
+---
+<small>
+NOTICE:
+
+This project is released under the Apache License 2.0. For personal use, you are free to use, modify, and distribute this software according to the terms of the Apache License 2.0.
+However, for commercial use, prior written permission from the author is required. Please contact the author at [zjkharry@gmail.com] for further information and to obtain the necessary authorization.
+Thank you for respecting the author's rights and the terms of the license.
+</small>
