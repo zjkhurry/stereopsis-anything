@@ -1,9 +1,9 @@
-torch 
-torchvision 
 numpy
 gradio_imageslider
 gradio==4.29.0
 matplotlib
 opencv-python
 mss
-pytorch-cuda
+torch=2.4.0+cu124 
+torchvision=0.19.0+cu124
+-f https://download.pytorch.org/whl/torch_stable.html
