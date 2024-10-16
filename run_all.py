@@ -77,6 +77,13 @@ parser.add_argument(
     default=0,
     help="Bais for y-axis of screen capture area.",
 )
+parser.add_argument(
+    "--resize_ratio",
+    "-r",
+    type=float,
+    default=0,
+    help="Ratio to resize the screen capture area.",
+)
 args = parser.parse_args()
 
 DEVICE = (
@@ -201,7 +208,13 @@ class PreprocessThread(threading.Thread):
                 continue
             raw_image = self.input_queue.get()
             raw_image = np.array(raw_image)
-            depth = model.infer_image(raw_image, 64)
+            height, width = raw_image.shape[:2]
+            if args.resize_ratio != 0:
+                height = (int)(height * args.resize_ratio)
+                width = (int)(width * args.resize_ratio)
+                raw_image = cv2.resize(raw_image, (height, width))
+
+            depth = model.infer_image(np.array(raw_image), 64)
 
             frames += 1
             fps = frames / (time.time() - start_time)
